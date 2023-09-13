@@ -46,9 +46,9 @@ title | The name of the loan provided by the borrower
 policyCode | Publicly Available Policy_Code=1 New Product Not Publicly Available Policy_Code=2
 n-series anonymous features Anonymous features | n0-n14, processing for counting features for some lender behavior
 
-# 3. Data Exploring [code](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Data%20exploring.ipynb)
+# 3. [Data Exploring](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Data%20exploring.ipynb)
 
-# 4. Data Preprocessing [code](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Data%20Engneering.ipynb)
+# 4. [Data Preprocessing](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Data%20Engneering.ipynb)
 ## 4.1 Categorical data
   Transferred into numerical type: dealing with date data; data mapping; one-hot.
 
@@ -60,7 +60,7 @@ n-series anonymous features Anonymous features | n0-n14, processing for counting
 ## 4.3 Outlier
   found outliers by $3\sigma$.
 
-# 5. Modeling [code](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Modeling.ipynb)
+# 5. [Modeling](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Modeling.ipynb)
   Devided the dataset into training set and cross-validation set, used XGBoost Classifier and Catboost Classifier, with the best result:
 
   Train AUC Score: 0.73,
