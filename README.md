@@ -3,6 +3,8 @@
 # 1. Project introduction
 This project is based on the background of personal credit in financial risk control, and requires predicting whether there is a possibility of default based on the data information of the loan applicant, so as to decide whether to approve the loan.
 
+Project link: https://tianchi.aliyun.com/competition/entrance/531830/introduction
+
 # 2. Dataset Description
 
 ## 2.1 Overview
@@ -44,11 +46,23 @@ title | The name of the loan provided by the borrower
 policyCode | Publicly Available Policy_Code=1 New Product Not Publicly Available Policy_Code=2
 n-series anonymous features Anonymous features | n0-n14, processing for counting features for some lender behavior
 
-# 3. Data Exploratory
+# 3. Data Exploring [code](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Data%20exploring.ipynb)
 
-# 4. Data Preprocessing
+# 4. Data Preprocessing [code](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Data%20Engneering.ipynb)
 ## 4.1 Categorical data
-## 4.2 Missing data
-## 4.3 Outlier
+  Transferred into numerical type: dealing with date data; data mapping; one-hot.
 
-# 5. Modeling
+## 4.2 Missing data
+  Filled numeric features with median;
+
+  Filled categorical features with mode.
+
+## 4.3 Outlier
+  found outliers by $3\sigma$.
+
+# 5. Modeling [code](https://github.com/GuoyiMa/Loan-Default-prediction/blob/main/Modeling.ipynb)
+  Devided the dataset into training set and cross-validation set, used XGBoost Classifier and Catboost Classifier, with the best result:
+
+  Train AUC Score: 0.73,
+
+  CV AUC Score: 0.72.
